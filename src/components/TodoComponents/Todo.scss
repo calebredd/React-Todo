@@ -1,0 +1,48 @@
+.todo {
+  display: flex;
+
+  .todoItem {
+    min-width: 20vw;
+    text-align: left;
+  }
+}
+
+input {
+  min-width: 20vw;
+}
+
+.delete-btn {
+  color: lightcoral;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.yellow {
+  background: lightyellow;
+
+  &:hover {
+    background: yellow;
+  }
+}
+
+.green {
+  background: lightgreen;
+
+  &:hover {
+    background: green;
+  }
+}
+
+.done-btn {
+  // background: yellow;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none;
+}
