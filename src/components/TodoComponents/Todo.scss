@@ -1,48 +1,82 @@
-.todo {
-  display: flex;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 
-  .todoItem {
-    min-width: 20vw;
-    text-align: left;
+  .todoSheet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-input {
-  min-width: 20vw;
-}
+  .todoSheet {
+    background: lightgray;
 
-.delete-btn {
-  color: lightcoral;
+    .list {
+      background: lightgoldenrodyellow;
 
-  &:hover {
-    color: red;
+      button {
+        border-radius: 5px;
+      }
+
+      .todo {
+        display: flex;
+
+        .todoItem {
+          min-width: 20vw;
+          text-align: left;
+        }
+
+
+        .delete-btn {
+          color: lightcoral;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+
+      }
+    }
+
+    .yellow {
+      background: lightyellow;
+
+      &:hover {
+        background: yellow;
+      }
+    }
+
+    .green {
+      background: lightgreen;
+
+      &:hover {
+        background: green;
+      }
+    }
+
+    .gray:hover {
+      background: lightgray;
+
+    }
+
+
+    .done {
+      text-decoration: line-through;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+
+    input {
+      min-width: 20vw;
+    }
+
+    .newItem {
+      margin: 10px;
+    }
   }
-}
-
-.yellow {
-  background: lightyellow;
-
-  &:hover {
-    background: yellow;
-  }
-}
-
-.green {
-  background: lightgreen;
-
-  &:hover {
-    background: green;
-  }
-}
-
-.done-btn {
-  // background: yellow;
-}
-
-.done {
-  text-decoration: line-through;
-}
-
-.hidden {
-  display: none;
 }
