@@ -25,7 +25,7 @@ export default function List(props) {
             onChange={event => event.target.value}
           ></input>
           <button className="gray" onClick={edit}>
-            /
+            Edit
           </button>
           <span className="delete-btn hidden" onClick={del}>
             X
