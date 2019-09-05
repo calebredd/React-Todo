@@ -1,0 +1,82 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  .todoSheet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .todoSheet {
+    background: lightgray;
+
+    .list {
+      background: lightgoldenrodyellow;
+
+      button {
+        border-radius: 5px;
+      }
+
+      .todo {
+        display: flex;
+
+        .todoItem {
+          min-width: 20vw;
+          text-align: left;
+        }
+
+
+        .delete-btn {
+          color: lightcoral;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+
+      }
+    }
+
+    .yellow {
+      background: lightyellow;
+
+      &:hover {
+        background: yellow;
+      }
+    }
+
+    .green {
+      background: lightgreen;
+
+      &:hover {
+        background: green;
+      }
+    }
+
+    .gray:hover {
+      background: lightgray;
+
+    }
+
+
+    .done {
+      text-decoration: line-through;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+
+    input {
+      min-width: 20vw;
+    }
+
+    .newItem {
+      margin: 10px;
+    }
+  }
+}
